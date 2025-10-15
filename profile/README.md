@@ -1,62 +1,57 @@
 # BrinPage
 
-**BrinPage** is a software company building next-generation AI systems and products for the future of intelligent computing.  
-Our mission is to make advanced AI accessible, practical, and deeply integrated into the way people build and interact with software.
+**BrinPage** builds developer-first AI tooling. Our first product is **CPM (Context Prompt Modules)** — a local-first SDK + dashboard to edit modular prompts, preview results in real time, and control model/temperature/cost using your own provider key (BYOK).
 
 ---
 
 ## What we do
 
-We design, train, and deploy proprietary AI models alongside intuitive, production-ready software products.  
-Our focus is on creating tools that combine **technical depth** with **effortless user experience**, empowering developers, teams, and businesses to achieve more in less time.
+We focus on practical, production-oriented AI tools:
+- **CPM (Context Prompt Modules)** · Local dashboard and SDK for modular, governed prompt context.
+- **BirdMind (roadmap)** · Domain-specific model aimed at high-precision tasks (starting with code).
+
+> Note: Our previous project **CGM** has been paused as we focus the company on CPM.
 
 ---
 
-## Current Projects
+## CPM — Context Prompt Modules
 
-### **CGM** — Code Generation Model  
-A platform that transforms natural language prompts into complete, working web applications.  
-Features include:
-- Real-time previews and live code editing.
-- AI-powered iterative chat for continuous refinement.
-- Flexible credit-based usage with scalable pricing.
-- Built with Next.js, Prisma, Clerk, shadcn/ui, E2B, and Inngest.
+**Why CPM**
+- **Modular context**: Base Prompt (always-on) + on-demand modules (Style/Tone, Facts, Playbooks, Citations).
+- **Live preview**: See the final assembled context before sending.
+- **Full control**: Switch model, temperature and options without touching app code.
+- **Cost awareness**: Requests and estimated spend visible while you iterate.
+- **Local-first (BYOK)**: Your OpenAI key, your environment. Light/Dark UI.
 
-🔗 [Learn more about CGM](https://cgm.brinpage.com)
-
----
-
-### **BirdMind** — Proprietary AI Model *(in development)*  
-An in-house, fine-tuned AI model optimized for:
-- Advanced code understanding and generation.
-- Integration into CGM and future BrinPage products.
-- Efficient deployment for high-performance workloads.
+**How it fits**
+- Works alongside your existing app/services.
+- Keep prompts versionable and consistent across features and teams.
+- Reduce token waste by attaching modules only when needed.
 
 ---
 
-## Our focus right now
+## Install & Run (under a minute)
 
-- Delivering a **stable, fast, and scalable** CGM platform.
-- Designing AI systems that balance **precision** and **creative flexibility**.
-- Researching and fine-tuning open-source models for proprietary use.
-- Preparing for early-stage startup programs and strategic partnerships  
-
----
-
-## Repository access
-
-All repositories under **BrinPage** are currently **private**.  
-We may release select open-source tools and components in the future.
-
----
-
-## Follow us
-
-- **Website:** [brinpage.com](https://brinpage.com)  
-- **Instagram:** [@brinpageai](https://instagram.com/brinpageai)  
-- **TikTok:** [@brinpageai](https://tiktok.com/@brinpageai)  
-- **YouTube:** [BrinPage AI](https://youtube.com/@brinpageai)  
+```bash
+# 1) Add the SDK
+npm install @brinpage/cpm
+```
+```bash
+# 2) Link your provider (.env)
+OPENAI_API_KEY=sk-...
+```
+```bash
+# 3) Launch the local dashboard
+npx brinpage cpm
+# then open http://localhost:3027
+```
 
 ---
 
-© 2025 BrinPage — All rights reserved.
+## Links
+
+Website: https://brinpage.com
+
+Docs: https://docs.brinpage.com
+
+X / instagram : @brinpageai
