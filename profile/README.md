@@ -37,8 +37,9 @@ We focus on practical, production-oriented AI tools:
 npm install @brinpage/cpm
 ```
 ```bash
-# 2) Link your provider (.env)
-OPENAI_API_KEY=sk-...
+# 2) .env
+BRINPAGE_API_BASE=https://cloud.brinpage.com
+BRINPAGE_LICENSE_KEY=bp_xxxx
 ```
 ```bash
 # 3) Launch the local dashboard
@@ -53,5 +54,7 @@ npx brinpage cpm
 Website: https://brinpage.com
 
 Docs: https://docs.brinpage.com
+
+Cloud: https://cloud.brinpage.com
 
 X / instagram : @brinpageai
