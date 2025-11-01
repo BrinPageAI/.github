@@ -7,8 +7,8 @@
 ## What we do
 
 We focus on practical, production-oriented AI tools:
-- **CPM (Context Prompt Modules)** · Local dashboard and SDK for modular, governed prompt context.
-- **BirdMind (roadmap)** · Domain-specific model aimed at high-precision tasks (starting with code).
+- **CPM (Context Prompt Modules)** — Local dashboard and SDK for modular, governed prompt context.
+- **BrinPage Cloud** — Central hub to issue/manage your BrinPage license keys, track usage, handle billing, and collaborate with your team. Cloud is about access & admin; inference still uses your provider key.
 
 > Note: Our previous project **CGM** has been paused as we focus the company on CPM.
 
@@ -21,7 +21,6 @@ We focus on practical, production-oriented AI tools:
 - **Live preview**: See the final assembled context before sending.
 - **Full control**: Switch model, temperature and options without touching app code.
 - **Cost awareness**: Requests and estimated spend visible while you iterate.
-- **Local-first (BYOK)**: Your OpenAI key, your environment. Light/Dark UI.
 
 **How it fits**
 - Works alongside your existing app/services.
