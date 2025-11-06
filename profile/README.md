@@ -1,59 +1,41 @@
-# BrinPage
+**BrinPage** builds developer-first AI infrastructure.  
+We develop modular systems that make working with large language models easier, scalable, and production-ready.
 
-**BrinPage** builds developer-first AI tooling. Our first product is **CPM (Context Prompt Modules)** — a local-first SDK + dashboard to edit modular prompts, preview results in real time, and control model/temperature/cost using your own provider key (BYOK).
+Our first product, **CPM (Context Prompt Manager)**, is a local SDK + dashboard for managing modular prompt logic — seamlessly connected to **BrinPage Cloud**, where API's and billing are handled.
 
 ---
 
 ## What we do
 
-We focus on practical, production-oriented AI tools:
-- **CPM (Context Prompt Modules)** — Local dashboard and SDK for modular, governed prompt context.
-- **BrinPage Cloud** — Central hub to issue/manage your BrinPage license keys, track usage, handle billing, and collaborate with your team. Cloud is about access & admin; inference still uses your provider key.
+BrinPage focuses on building **infrastructure-grade AI tooling** for developers and teams that want to integrate models efficiently and safely.
 
-> Note: Our previous project **CGM** has been paused as we focus the company on CPM.
+- **CPM SDK** — Local-first SDK and dashboard (running on localhost:3027) to create, edit, and preview modular prompt contexts, and manage AI models — including temperature, output length, and embeddings — all from the frontend.  
+- **BrinPage Cloud** — Centralized platform to manage API keys, handle billing, and monitor usage across your products.
 
----
-
-## CPM — Context Prompt Modules
-
-**Why CPM**
-- **Modular context**: Base Prompt (always-on) + on-demand modules (Style/Tone, Facts, Playbooks, Citations).
-- **Live preview**: See the final assembled context before sending.
-- **Full control**: Switch model, temperature and options without touching app code.
-- **Cost awareness**: Requests and estimated spend visible while you iterate.
-
-**How it fits**
-- Works alongside your existing app/services.
-- Keep prompts versionable and consistent across features and teams.
-- Reduce token waste by attaching modules only when needed.
+> Every request routes securely through BrinPage Cloud — no BYOK, no setup. You build, we handle infrastructure.
 
 ---
 
-## Install & Run (under a minute)
+## CPM — Context Prompt Manager
 
-```bash
-# 1) Add the SDK
-npm install @brinpage/cpm
-```
-```bash
-# 2) .env
-BRINPAGE_API_BASE=https://cloud.brinpage.com
-BRINPAGE_LICENSE_KEY=bp_xxxx
-```
-```bash
-# 3) Launch the local dashboard
-npx brinpage cpm
-# then open http://localhost:3027
-```
+**CPM** brings precision and efficiency to prompt engineering through modular context management.
+
+- **Modular design** – Build reusable prompt modules (facts, style, tone, behaviors...) that are only included when relevant.  
+- **Smarter context** – Each request assembles just the information needed, reducing token usage and improving model accuracy.  
+- **Live preview** – Visualize the full prompt exactly as the model will receive it.  
+- **Cloud-connected** – All requests are routed through BrinPage Cloud for real-time tracking and cost optimization.  
+- **Consistent workflow** – Keep prompts versionable, governed, and aligned across teams and environments.
+
+
+📘 Learn more: [docs.brinpage.com/cpm](https://docs.brinpage.com/cpm)
 
 ---
 
 ## Links
 
-Website: https://brinpage.com
+🌐 Website — [brinpage.com](https://brinpage.com)  
+☁️ Cloud — [cloud.brinpage.com](https://cloud.brinpage.com)  
+📘 Docs — [docs.brinpage.com](https://docs.brinpage.com)  
+📱 X / Instagram — [@brinpageai](https://instagram.com/brinpageai)
 
-Docs: https://docs.brinpage.com
-
-Cloud: https://cloud.brinpage.com
-
-X / instagram : @brinpageai
+---
